@@ -28,12 +28,12 @@ body {
     grid-template-columns: 1fr 1.3fr;
     align-items: center;
     width: 50%;
-    max-width: 1000px;    
+    max-width: 1000px;
     margin: 16px;
     background-color: #fff;
-    border-radius: 1rem;    
+    border-radius: 1rem;
     box-shadow: 0px 0px 15px 15px rgba(134, 134, 134, 0.05);
-    
+
 }
 
 .container-left {
@@ -49,10 +49,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
-    padding: 3rem; 
+    padding: 3rem;
 }
 
-.creator-container{
+.creator-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,7 +68,7 @@ figure {
     display: flex;
 }
 
-figure img{
+figure img {
     margin-right: 1rem;
     border-radius: 50%;
     align-items: center;
@@ -78,6 +78,7 @@ figure img{
 }
 
 .share {
+    position: relative;
     background-image: url('./images/icon-share.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -106,14 +107,49 @@ p {
     line-height: 1.5rem;
 }
 
+.share-social-media {
+    position: relative;
+    display: flex;
+    */ align-items: center;
+    justify-content: center;
+
+}
+
+.pop-up {
+    display: flex;
+    position: absolute;
+    bottom: 120%;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    color: var(--Light-Grayish-Blue);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    padding: 1.2rem 2rem;
+    margin: 0.5rem;
+    gap: 1.2rem;
+    border-radius: 1rem;
+}
+
+/* .pop-up::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--Very-Dark-Grayish-Blue) transparent transparent transparent;
+} */
+
 /* Mobile View */
 
 @media screen and (max-width: 768px) {
 
     .card-container {
-       display: grid;
-       grid-template-columns: 1fr;
-       width: 90%;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
     }
 
     .container-left {
@@ -126,7 +162,7 @@ p {
 
     .container-right {
         gap: 1.4rem;
-        padding: 2rem 2rem 1.5rem 2rem; 
+        padding: 2rem 2rem 1.5rem 2rem;
     }
 
     h2 {
@@ -134,12 +170,12 @@ p {
         line-height: 1.6;
     }
 
-    .container-right > p {
-      margin-bottom: 1rem;
+    .container-right>p {
+        margin-bottom: 1rem;
     }
 
     figure img {
-        height: 3rem; 
+        height: 3rem;
     }
 
     .share {
@@ -148,5 +184,20 @@ p {
         height: 40px;
         width: 40px;
     }
-}
 
+    .pop-up {
+        display: flex;
+        position: absolute;
+        bottom: 120%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.2rem;
+    }
+
+    .pop-up>img {
+        height: 20px;
+        width: 20px;
+    }
+
+}
