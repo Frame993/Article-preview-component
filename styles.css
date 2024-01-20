@@ -1,31 +1,153 @@
+:root {
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
     display: flex;
+    color: var(--Very-Dark-Grayish);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: var(--Light-Grayish-Blue);
 }
 
 .card-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
+    grid-template-columns: 1fr 1.3fr;
     align-items: center;
-    width: 60%;
-    border-radius: 1rem;
+    width: 50%;
+    max-width: 1000px;    
+    margin: 16px;
+    background-color: #fff;
+    border-radius: 1rem;    
+    box-shadow: 0px 0px 15px 15px rgba(134, 134, 134, 0.05);
+    
+}
+
+.container-left {
+    background-image: url('./images/drawers.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
 }
 
 .container-right {
-    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    padding: 3rem; 
 }
 
-.container-right {
-    padding: 3rem;
+.creator-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.avatar {
+    display: flex;
+    align-items: center;
+}
+
+figure {
+    display: flex;
+}
+
+figure img{
+    margin-right: 1rem;
+    border-radius: 50%;
+    align-items: center;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.share {
+    background-image: url('./images/icon-share.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position-y: 14px;
+    height: 48px;
+    width: 48px;
+    background-color: var(--Light-Grayish-Blue);
+    border-radius: 50%;
+    border: none;
+}
+
+.share:hover {
+    background-image: url('./images/icon-share-white.svg');
+    background-color: var(--Desaturated-Dark-Blue);
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: white;
+}
+
+
+p {
+    color: var(--Desaturated-Dark-Blue);
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+
+    .card-container {
+       display: grid;
+       grid-template-columns: 1fr;
+       /* grid-template-rows: 1fr 2fr; */
+       width: 90%;
+    }
+
+    .container-left {
+        background-image: url('./images/drawers.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 250px;
+        border-radius: 1rem 1rem 0 0;
+    }
+
+    .container-right {
+        gap: 1.4rem;
+        padding: 2rem 2rem 1.5rem 2rem; 
+    }
+
+    h2 {
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+    .container-right > p {
+      margin-bottom: 1rem;
+    }
+
+    figure img {
+        height: 3rem; 
+    }
+
+    .share {
+        background-size: 18px;
+        background-position-y: 10px;
+        height: 40px;
+        width: 40px;
+    }
+}
+

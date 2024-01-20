@@ -8,12 +8,21 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Article preview component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
   <article class="card-container">
-    <img class="card-image">
+
+    <section class="container-left">
+      <!-- <img class="drawers" src="./images/drawers.jpg" alt=""> -->
+    </section>
+
     <section class="container-right">
       <h2>Shift the overall look and feel by adding these wonderful
         touches to furniture in your home</h2>
@@ -28,11 +37,13 @@
             <img src="./images/avatar-michelle.jpg" alt="">
           </figure>
           <figcaption>
-            <p><strong>Michelle Appleton</strong></p>
+            <h4><strong>Michelle Appleton</strong></h4>
             <p>28 Jun 2020</p>
           </figcaption>
-        </div>  
-        <img src="./images/icon-share.svg" alt="">
+        </div>
+        
+        <button class="share"></button>
+
       </section>
     </section>
 
