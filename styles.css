@@ -9,7 +9,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
 }
 
 body {
@@ -106,6 +105,8 @@ p {
     color: var(--Desaturated-Dark-Blue);
     line-height: 1.5rem;
 }
+
+/* Mobile View */
 
 @media screen and (max-width: 768px) {
 
