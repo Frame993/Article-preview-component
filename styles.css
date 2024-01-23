@@ -101,16 +101,20 @@ figure img {
     color: white;
 }
 
+h2 {
+    text-wrap: pretty;
+}
 
 p {
     color: var(--Desaturated-Dark-Blue);
     line-height: 1.5rem;
+    text-wrap: pretty;
 }
 
 .share-social-media {
     position: relative;
     display: flex;
-    */ align-items: center;
+    align-items: center;
     justify-content: center;
 
 }
@@ -118,6 +122,7 @@ p {
 .pop-up {
     display: flex;
     position: absolute;
+    align-items: center;
     bottom: 120%;
     background-color: var(--Very-Dark-Grayish-Blue);
     color: var(--Light-Grayish-Blue);
@@ -129,6 +134,22 @@ p {
     margin: 0.5rem;
     gap: 1.2rem;
     border-radius: 1rem;
+}
+
+.pop-up:active {
+    background-color: var(--Desaturated-Dark-Blue);
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+a {
+    cursor: pointer;
 }
 
 /* .pop-up::after {
@@ -186,7 +207,6 @@ p {
     }
 
     .pop-up {
-        display: flex;
         position: absolute;
         bottom: 120%;
         flex-direction: column;
