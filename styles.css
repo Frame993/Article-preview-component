@@ -116,7 +116,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .pop-up {
@@ -135,10 +134,10 @@ p {
     gap: 1.2rem;
     border-radius: 1rem;
 }
-
+/* 
 .pop-up:active {
     background-color: var(--Desaturated-Dark-Blue);
-}
+} */
 
 .hidden {
     display: none;
